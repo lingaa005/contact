@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Contact</title></head>
+<body>
+<h1>Edit Contact</h1>
+<form method="post">
+    Name: <input name="name" value="{{ contact[1] }}"><br>
+    Phone: <input name="phone" value="{{ contact[2] }}"><br>
+    Email: <input name="email" value="{{ contact[3] }}"><br>
+    <input type="submit" value="Update">
+</form>
+<a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>
